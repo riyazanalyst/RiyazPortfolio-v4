@@ -32,17 +32,17 @@ export default function ContactSection() {
  {
  label: 'GitHub',
  icon: Github,
- href: 'https://github.com/Poojaaaa27',
+ href: 'https://github.com/riyazanalyst',
  },
  {
  label: 'LinkedIn',
  icon: Linkedin,
- href: 'https://www.linkedin.com/in/pooja-j-b72427251/',
+ href: 'https://www.linkedin.com/in/riyaztheanalyst/',
  },
  {
  label: 'Email',
  icon: Mail,
- href: 'mailto:poojaa1627@gmail.com',
+ href: 'mohammedriyaz1707@gmail.com',
  },
  ];
 
@@ -58,7 +58,7 @@ export default function ContactSection() {
   });
 
   const onSubmit = (data: ContactFormValues) => {
-    const to = 'poojaa1627@gmail.com';
+    const to = 'riyaztheanalyst@gmail.com';
     const subject = encodeURIComponent(data.subject);
     const body = encodeURIComponent(
       `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`
@@ -86,17 +86,17 @@ export default function ContactSection() {
             <Card className="glassmorphism overflow-hidden">
              <div className="relative aspect-square w-full">
                <Image
-                 src="/photo.jpeg"
-                 alt="Pooja J"
+                 src="/Riyaz1.jpeg"
+                 alt="Riyaz"
                  fill
                  className="rounded-t-lg object-cover"
-                 data-ai-hint="Pooja J smiling portrait"
+                 data-ai-hint="Riyaz smiling portrait"
                />
              </div>
 
               <CardContent className="p-6 text-center">
-                <h3 className="font-headline text-2xl font-bold">Pooja J</h3>
-                <p className="text-accent font-semibold text-sm">AI Innovator & Creative Technologist</p>
+                <h3 className="font-headline text-2xl font-bold">Mohammed Riyaz</h3>
+                <p className="text-accent font-semibold text-sm">Data Analyst and Business Intelligence</p>
                 <div className="flex justify-center gap-4 mt-4">
                   {socials.map((social) => (
                     <Button key={social.label} asChild variant="outline" size="icon" className="rounded-full w-10 h-10 hover:bg-accent/20 hover:text-accent hover:border-accent">

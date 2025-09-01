@@ -1,0 +1,3 @@
+cd "C:\Users\R I Y A Z\Desktop\riyaz-portfolio"
+npm install
+npm run dev

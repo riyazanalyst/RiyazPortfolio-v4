@@ -4,10 +4,10 @@ import { Badge } from '@/components/ui/badge';
 
 const certifications = [
     {
-        title: "Database Management System",
-        issuer: "NPTEL",
-        date: "Mar 2024",
-        skills: ["DBMS"],
+        title: "Microsoft PowerBI Data Analyst",
+        issuer: "Microsoft(Coursera)",
+        date: "June 2025",
+        skills: ["Microsoft PowerBI"],
     },
     {
         title: "Python for Data science",
@@ -16,29 +16,24 @@ const certifications = [
         skills: ["Data Science", "Python", "Pandas", "NumPy"],
     },
     {
-        title: "Data Science Tools",
-        issuer: "Coursera",
-        date: "Dec 2023",
-        skills: ["Jupyter", "RStudio", "Git", "Watson Studio"],
+        title: "Mysql for data analytics and business intelligence",
+        issuer: "Udemy",
+        date: "March 2024",
+        skills: ["MySQL"],
     },
     {
-        title: "AI Digital Skills",
+        title: "Accenture North America - Data Analytics and Visualization Job Simulation",
         issuer: "Accenture",
-        date: "Dec 2023",
-        skills: ["Artificial Intelligence", "AI Ethics"],
+        date: "June 2025",
+        skills: ["Artificial Intelligence", "Data Analytics"],
     },
     {
-        title: "Introduction to Deep Learning",
-        issuer: "Great Learning",
-        date: "Dec 2023",
-        skills: ["Deep Learning", "Neural Networks"],
+        title: "RDBMS AND POSTGRESQL",
+        issuer: "Spoken Tutorial",
+        date: "Dec 2024",
+        skills: ["Postgresql"],
     },
-    {
-        title: "Python Programming",
-        issuer: "HCL GUVI",
-        date: "Dec 2023",
-        skills: ["Python"],
-    },
+   
     {
         title: "Python for Data Science & AI",
         issuer: "IBM",
@@ -46,33 +41,22 @@ const certifications = [
         skills: ["Data Science", "Python", "AI Development"],
     },
     {
-        title: "Supervised Machine Learning",
-        issuer: "Stanford University",
-        date: "Dec 2023",
-        skills: ["Machine Learning", "Regression", "Classification"],
+        title: "Inclusive mindset",
+        issuer: "PwC",
+        date: "Dec 2024",
+        skills: ["Emotional Intelligence", "Inclusive practices", "Intersectionality"],
     },
-    {
-        title: "Java Tools",
-        issuer: "Infosys Springboard",
-        date: "Sep 2023",
-        skills: ["Java", "Development Tools"],
-    },
-    {
-        title: "AICTE Parakh Assessment",
-        issuer: "AICTE",
-        date: "Aug 2023",
-        skills: ["Operating Systems", "Databases", "OOP"],
-    },
+   
     {
         title: "SQL (Basic)",
         issuer: "HackerRank",
-        date: "Jul 2023",
+        date: "Jul 2024",
         skills: ["SQL", "Databases"],
     },
     {
         title: "Python (Basic)",
         issuer: "HackerRank",
-        date: "Jun 2023",
+        date: "Aug 2024",
         skills: ["Python"],
     },
 ];

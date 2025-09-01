@@ -5,8 +5,8 @@ import { ChatBot } from '@/components/chat-bot';
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
-  title: 'PoojaJ.AI',
-  description: 'Pooja J - AI Innovator | Creative Technologist | Real-World Problem Solver',
+  title: 'Riyaz.AI',
+  description: 'Mohammed Riyaz | Data Analyst Portfolio',
 };
 
 export default function RootLayout({

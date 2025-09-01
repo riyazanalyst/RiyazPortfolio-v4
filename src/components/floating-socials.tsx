@@ -7,17 +7,17 @@ const socials = [
   {
     label: 'GitHub',
     icon: Github,
-    href: 'https://github.com/Poojaaaa27',
+    href: 'https://github.com/riyazanalyst',
   },
   {
     label: 'LinkedIn',
     icon: Linkedin,
-    href: 'https://www.linkedin.com/in/pooja-j-b72427251/',
+    href: 'https://www.linkedin.com/in/riyaztheanalyst/',
   },
   {
     label: 'Email',
     icon: Mail,
-    href: 'mailto:poojaa1627@gmail.com',
+    href: 'riyaztheanalyst@gmail.com',
   },
 ];
 
@@ -27,7 +27,7 @@ export default function FloatingSocials() {
       <TooltipProvider>
         <div className="flex md:flex-col gap-2 p-1 rounded-full glassmorphism">
           {socials.map((social) => (
-            <Tooltip key={social.label} delayDuration={0}>
+            <Tooltip key={social.href} delayDuration={0}>
               <TooltipTrigger asChild>
                 <Button asChild variant="ghost" size="icon" className="rounded-full w-12 h-12 hover:bg-accent/30 hover:text-accent">
                   <Link href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.label}>

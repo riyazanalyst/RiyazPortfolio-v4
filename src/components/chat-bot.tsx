@@ -67,7 +67,7 @@ export function ChatBot() {
         <DialogHeader className="p-4 border-b">
           <DialogTitle className="flex items-center gap-2 font-headline">
             <Bot className="h-6 w-6 text-primary" />
-            Pooja's AI Assistant
+            Riyaz's AI Assistant
           </DialogTitle>
         </DialogHeader>
         <ScrollArea className="h-[50vh] w-full" ref={scrollAreaRef}>
@@ -77,7 +77,7 @@ export function ChatBot() {
                     <AvatarFallback><Bot className="h-4 w-4" /></AvatarFallback>
                 </Avatar>
                 <div className="bg-muted rounded-lg p-3 text-sm max-w-[80%]">
-                    <p>Hello! I'm an AI assistant for Pooja's portfolio. Ask me anything about her skills, projects, or experience!</p>
+                    <p>Hello! I'm an AI assistant for Riyaz's portfolio. Ask me anything about his skills, projects, or experience!</p>
                 </div>
             </div>
             {messages.map((message, index) => (

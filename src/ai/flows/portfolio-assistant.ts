@@ -7,51 +7,55 @@
  * - PortfolioAssistantOutput - The return type for the portfolioAssistant function.
  */
 
-import {ai} from '@/ai/genkit';
-import {z} from 'genkit';
+import { ai } from '@/ai/genkit';
+import { z } from 'genkit';
 
 const portfolioContext = `
-Pooja J - AI Innovator | Creative Technologist | Real-World Problem Solver
+Mohammed Riyaz – Data Analyst | Power BI Specialist | Problem Solver
 
 About Me:
-I'm a final-year Computer Science student at SRM University with a passion for using AI to solve real-world problems. I enjoy experimenting with new ideas, collaborating with diverse teams, and tackling LeetCode challenges. If you're looking for someone who combines technical excellence with a drive for positive change, let's connect!
-
-Fun Fact: When I'm not coding, I'm probably catching up on the latest movies and series or discovering new music.
+I am Mohammed Riyaz, a passionate data analyst with hands-on experience in delivering data-driven solutions. 
+I specialize in Power BI, SQL, Python, and Excel to transform raw data into actionable insights. 
+Previously worked at PwC as a Data Specialist and also gained exposure through an internship at HRBOTICS. 
+I enjoy solving real-world data challenges, optimizing workflows, and enabling better decision-making.
 
 Education:
-- SRM University, Chennai: B.Tech, CSE (AI/ML), 2021-2025, CGPA: 9.81. Deeply engaged in AI/ML research and application, actively participating in hackathons and competitive programming.
-- Modern School, Chennai: Higher Secondary (CBSE), 2021, Achieved 95% in Higher Secondary Certificate examinations, laying a strong foundation in science and mathematics.
+- MCA in Data Analytics (2025–2027), Chandigarh University
+- BCA (CGPA: 8.5), NGM College
 
 Skills:
-- Languages: Python, C, C++, HTML/CSS, SQL, JavaScript
-- Tools: Git, GCP, Anaconda, PyCharm, VS Code
-- Frameworks: Streamlit, Flask, Node.js, Express, MongoDB, FastAPI
-- Libraries: Pandas, Numpy, Scikit-learn, TensorFlow, PyTorch, OpenCV
+- Tools & Tech: Power BI, SQL, Excel, Python, MS Office Suite
+- Data Analysis: Dashboard development, ETL, Data cleaning & transformation
+- Cloud: Basics of Azure & Google Cloud
+- Soft Skills: Communication, teamwork, leadership, problem-solving
+
+Work Experience:
+- PwC: Data Specialist (2024–2025) — Created Power BI dashboards, cleaned messy sales/inventory data, and delivered insights for business operations.
+- HRBOTICS: Intern (1 month) — Worked on quality analysis, data labeling, and annotation tasks.
 
 Featured Projects:
-- AgriImpact: An innovative full-stack solution to optimize crop planning for farmers using ML-driven predictions. Reduced manual farm planning effort by 40%.
-- Anti Spoofing Detection: A robust system to enhance facial recognition security by detecting and preventing spoofing attacks. Achieved 98% accuracy in identifying spoofing attempts.
-- Student Stress Level Prediction: An analytical tool that predicts student stress levels based on academic and personal factors, enabling timely intervention. Provided actionable insights for improving student wellness programs.
-- ResQbite: A platform using AI to reduce food waste by connecting donors with NGOs, featuring ML-powered waste prediction, nutritional analysis, and optimized delivery routes.
+- HR Distribution Dashboard: Built using Power BI + MySQL (22,000+ records), delivering insights on hiring trends, workforce distribution, and attrition.
+- Loan Delinquency Analysis: Developed an end-to-end data analysis solution on delinquency datasets to optimize queries and structure business insights.
+- Walmart Data Analysis: Cleaned and visualized sales data in Power BI to track KPIs and business performance.
+- Smart IV Drip Monitoring System: IoT-based project to monitor IV fluid levels in real time with alert mechanisms.
+- Hand Gesture Recognition: Built a recognition system to classify hand symbols using ML models.
+- Well Flow Optimization with Liquid Nitrogen: Investigated increasing well flow using coil tubing and liquid nitrogen.
 
-Research & Publications:
-- Title: Anti Spoofing Detection for Face Recognition using Image Quality Assessment and Deep Learning
-- Publication: IEEE CONFERENCE PUBLICATION (Publication Pending)
-- Summary: This research introduces a novel two-step model combining image quality assessment and a fine-tuned MobileNetV2 architecture to effectively combat face spoofing attacks. Our method demonstrates high accuracy and robustness across various spoofing techniques. Achieved 96.5% F1 Score.
-- Title: Accuracy Improvement in Diabetic Retinopathy Detection
-- Publication: IEEE International Conference on Research and Technology
-- Summary: This work compares four high-performing machine learning models to develop a robust prediction model for Diabetic Retinopathy, achieving high precision and recall with CNN, Transfer Learning, and Ensemble models. The publication is available at https://ieeexplore.ieee.org/document/10895961.
+Achievements:
+- Founder of 7am Ventures
+- Completed Excel and Power BI certifications (Coursera, Microsoft)
+- Participated in Aero Show & National Level Science & Tech Expo (secured 5th place for “Temp & Oil Level Indicator with Alarm System”)
+- Actively posting educational content on Instagram (100-day challenge: Python, SQL, Power BI, Excel)
 
-Competitive Programming Experience (CodeChef University Club - SRMIST Chapter):
-- Event Organizer: Organized and managed multiple coding contests and workshops for the university community.
-- Competitive Programmer: Active in CodeChef contests, 3-star rating.
-- Challenge Streaks: Maintained long streaks of daily problem-solving on platforms like LeetCode and GeeksforGeeks.
-- LeetCode Profile: https://leetcode.com/u/poojaa_j/
+Fun Fact:
+I love creating dashboards that tell stories, and outside of work, I enjoy fitness, exploring tech trends, and content creation.
+
+---
+
 `;
 
-
 const PortfolioAssistantInputSchema = z.object({
-  query: z.string().describe('The user question about Pooja J.'),
+  query: z.string().describe('The user question about Mohammed Riyaz.'),
 });
 export type PortfolioAssistantInput = z.infer<typeof PortfolioAssistantInputSchema>;
 
@@ -66,9 +70,12 @@ export async function portfolioAssistant(input: PortfolioAssistantInput): Promis
 
 const prompt = ai.definePrompt({
   name: 'portfolioAssistantPrompt',
-  input: {schema: PortfolioAssistantInputSchema},
-  output: {schema: PortfolioAssistantOutputSchema},
-  system: `You are a friendly and professional AI assistant for Pooja J's portfolio website. Your goal is to answer questions from visitors based on the information provided below. Be concise and helpful. If a question is outside the scope of the provided information or is inappropriate, politely decline to answer.
+  input: { schema: PortfolioAssistantInputSchema },
+  output: { schema: PortfolioAssistantOutputSchema },
+  system: `You are a friendly and professional AI assistant for Mohammed Riyaz's portfolio website. 
+Your job is to answer questions based only on the provided portfolio information. 
+If the user asks something outside of scope or inappropriate, politely decline. 
+Keep responses concise, professional, and helpful.
 
 Portfolio Information:
 ---
@@ -85,7 +92,7 @@ const portfolioAssistantFlow = ai.defineFlow(
     outputSchema: PortfolioAssistantOutputSchema,
   },
   async input => {
-    const {output} = await prompt(input);
+    const { output } = await prompt(input);
     return output!;
   }
 );
