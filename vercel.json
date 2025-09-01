@@ -1,0 +1,13 @@
+
+{
+  "build": {
+    "env": {
+      "GENKIT_ENV": "production"
+    }
+  },
+  "functions": {
+    "src/ai/genkit.ts": {
+      "memory": 1024
+    }
+  }
+}
