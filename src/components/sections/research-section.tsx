@@ -13,13 +13,13 @@ const researchData = [
     metricLabel: "F1 Score",
   },
   {
-    publication: "IEEE International Conference on Research and Technology",
-    title: "Accuracy Improvement in Diabetic Retinopathy Detection",
-    summary: "This work compares four high-performing machine learning models to develop a robust prediction model for Diabetic Retinopathy, achieving high precision and recall with CNN, Transfer Learning, and Ensemble models.",
-    link: "https://ieeexplore.ieee.org/document/10895961",
-    metricValue: "97%",
-    metricLabel: "Precision",
-  },
+  publication: "G20 Annual International Conference, 2024",
+  title: "Strengthening and Shaping Global Governance",
+  summary: "This work explores strategies to enhance international cooperation, institutional frameworks, and policy alignment among G20 nations. It focuses on building resilient governance structures to address global challenges such as economic stability, sustainable development, and digital transformation.",
+  link: "#",
+  metricValue: "5th Place",
+  metricLabel: "Conference Recognition",
+},
 ];
 
 

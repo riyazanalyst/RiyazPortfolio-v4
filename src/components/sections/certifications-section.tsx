@@ -28,7 +28,7 @@ const certifications = [
         skills: ["Artificial Intelligence", "Data Analytics"],
     },
     {
-        title: "RDBMS AND POSTGRESQL",
+        title: "Relatinal Database Management System and Postgresql",
         issuer: "Spoken Tutorial",
         date: "Dec 2024",
         skills: ["Postgresql"],
