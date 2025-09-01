@@ -35,7 +35,7 @@ What started as curiosity turned into passion — cleaning, analyzing, and visua
           </Button>
           <ChatNowButton />
           <Button size="lg" variant="secondary" asChild>
-            <a href="https://drive.google.com/drive/u/0/folders/1elPlKRjzimSpA3p9GtsKlUqZLG-Bp0A2" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1OfJYsM9A5erZ4f0PyCnIPW73rOOEsT6s/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <FileText className="mr-2 h-5 w-5" />
               View My Resume
             </a>
