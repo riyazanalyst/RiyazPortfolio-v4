@@ -1,5 +1,5 @@
 
-# PoojaJ.AI Portfolio
+# Riyaz.AI portfolio
 
 This is a Next.js portfolio website built with Firebase Studio, featuring Genkit for AI capabilities.
 
