@@ -27,7 +27,7 @@ const workExperienceAequitas = {
             description: "Developed trend analysis on PTP rates, bucket-wise recovery, roll rates, and aging to support leadership in forecasting recovery cycles and optimizing resource allocation."
         },
         {
-            icon: Database,s
+            icon: Database,
             title: "Process Automation & Efficiency",
             description: "Automated repetitive data preparation using advanced Excel formulas and SQL queries, improving turnaround time for daily reporting and enhancing consistency across insights."
         },
