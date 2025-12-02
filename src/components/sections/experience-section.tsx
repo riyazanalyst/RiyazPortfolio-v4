@@ -39,7 +39,6 @@ const workExperienceAequitas = {
     ]
 };
 
-
 const workExperience = {
     company: "PricewaterhouseCoopers (PwC)",
     role: "Data Specialist",
@@ -101,7 +100,38 @@ export default function ExperienceSection() {
       </div>
 
       <div className="space-y-12">
-        {/* Work Experience */}
+
+        {/* Aequitas Experience */}
+        <div>
+          <h3 className="text-3xl font-bold font-headline mb-6 text-center text-primary">Freelance Experience</h3>
+          <Card className="glassmorphism p-6 md:p-8">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="flex-shrink-0 text-center">
+                <div className="w-40 h-40 rounded-full bg-secondary/50 flex items-center justify-center mx-auto border-4 border-primary/20">
+                  <Briefcase className="w-20 h-20 text-primary"/>
+                </div>
+                <h3 className="text-2xl font-bold font-headline mt-4">{workExperienceAequitas.company}</h3>
+                <p className="font-semibold text-accent">{workExperienceAequitas.role}</p>
+                <p className="text-sm text-muted-foreground">{workExperienceAequitas.duration}</p>
+              </div>
+              <div className="flex-grow flex flex-col gap-6">
+                {workExperienceAequitas.achievements.map(exp => (
+                  <div key={exp.title} className="flex items-start gap-4 p-4 rounded-lg hover:bg-secondary/50 transition-colors">
+                    <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center text-accent">
+                      <exp.icon className="w-8 h-8"/>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg font-headline">{exp.title}</h4>
+                      <p className="text-sm text-muted-foreground">{exp.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* PwC Experience */}
         <div>
           <h3 className="text-3xl font-bold font-headline mb-6 text-center text-primary">Work Experience</h3>
           <Card className="glassmorphism p-6 md:p-8">
@@ -160,6 +190,7 @@ export default function ExperienceSection() {
             </div>
           </Card>
         </div>
+
       </div>
     </section>
   );
