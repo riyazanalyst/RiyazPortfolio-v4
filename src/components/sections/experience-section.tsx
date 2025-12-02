@@ -1,10 +1,49 @@
 import { Card } from '@/components/ui/card';
 import { Award, Briefcase, Code, Database, ScanLine, Workflow } from 'lucide-react';
 
+const workExperienceAequitas = {
+    company: "Aequitas",
+    role: "Freelance Data Engineering Analyst",
+    duration: "2025 – Present",
+    achievements: [
+        {
+            icon: Database,
+            title: "Recovery Data Analysis & Insights",
+            description: "Analyzed large-scale debt recovery datasets across multiple regions to evaluate team performance, identify recovery bottlenecks, and deliver insights that improved overall collection efficiency by 25%."
+        },
+        {
+            icon: Workflow,
+            title: "Data Cleaning & Workflow Optimization",
+            description: "Cleaned and transformed raw data from SharePoint, Excel, and CRM systems, standardized structures, and ensured 100% accuracy in daily, weekly, and monthly performance reporting."
+        },
+        {
+            icon: ScanLine,
+            title: "Dashboarding & Reporting Automation",
+            description: "Designed and automated Power BI dashboards and Excel-based reports to track TL rankings, agent performance, collection targets, follow-up outcomes, and recovery status — reducing manual reporting time by 40%."
+        },
+        {
+            icon: Briefcase,
+            title: "Advanced Recovery Metrics & Forecasting",
+            description: "Developed trend analysis on PTP rates, bucket-wise recovery, roll rates, and aging to support leadership in forecasting recovery cycles and optimizing resource allocation."
+        },
+        {
+            icon: Database,s
+            title: "Process Automation & Efficiency",
+            description: "Automated repetitive data preparation using advanced Excel formulas and SQL queries, improving turnaround time for daily reporting and enhancing consistency across insights."
+        },
+        {
+            icon: Briefcase,
+            title: "Stakeholder Collaboration",
+            description: "Collaborated with operations and recovery teams to validate data issues, align reporting needs, and deliver accurate insights — strengthening data reliability and decision-making."
+        }
+    ]
+};
+
+
 const workExperience = {
     company: "PricewaterhouseCoopers (PwC)",
     role: "Data Specialist",
-    duration: "May 2024 – Present",
+    duration: "May 2024 – Aug 2025",
     achievements: [
         {
             icon: Database,
